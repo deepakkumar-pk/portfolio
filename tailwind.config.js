@@ -1,18 +1,35 @@
-/** @type {import('tailwindcss').Config} */
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 module.exports = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    container: {
+      padding: {
+        DEFAULT: "15px",
+      },
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "960px",
+      xl: "1200px",
+    },
     extend: {
+      fontFamily: {
+        primary: ["var(--orbitron-font)", ...fontFamily.sans],
+        secondary: ["var(--rajdhani-font)", ...fontFamily.sans],
+        tertiary: ["var(--aldrich-font)", "ui-serif", "Georgia"],
+      },
+      colors: {
+        primary: "#0a0a0a",
+        accent: "#CA2422",
+      },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        site: "url('/img/site-bg.jpg')",
+        about: "url('/img/about.png')",
+        services: "url('/img/service.png')",
       },
     },
   },
   plugins: [],
-}
+};
