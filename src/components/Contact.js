@@ -98,7 +98,7 @@ const Contact = () => {
                   Get in touch
                 </h4>
                 <h2 className="text-[45px] lg:text-[90px] leading-none mb-4">
-                  Let's work <br /> together!
+                  Let<span>&#39;</span>s work <br /> together!
                 </h2>
               </div>
             </div>

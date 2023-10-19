@@ -46,8 +46,8 @@ const Services = () => {
           >
             <h2 className="h2 text-accent mb-6">What I Do.</h2>
             <h3 className="h3 max-w-[455px] mb-16">
-              I'm a Freelace Full-Stack Developer with over 2 years of
-              experience.
+              I<span>&#39;</span>m a Freelace Full-Stack Developer with over 2
+              years of experience.
             </h3>
             <button className="btn btn-sm">See my work</button>
           </motion.div>
