@@ -1,5 +1,6 @@
 import './globals.css'
 import { Orbitron,Rajdhani,Aldrich } from "next/font/google";
+import { Analytics } from '@vercel/analytics/react';
 
  
 const orbitron = Orbitron({
@@ -36,6 +37,8 @@ export default function RootLayout({ children }) {
         className={`${orbitron.variable} ${rajdhani.variable}  ${aldrich.variable}`}
       >
         {children}
+        <Analytics />
+
       </body>
     </html>
   );
