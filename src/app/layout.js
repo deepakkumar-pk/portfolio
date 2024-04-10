@@ -1,6 +1,6 @@
 import './globals.css'
 import { Orbitron,Rajdhani,Aldrich } from "next/font/google";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
  
 const orbitron = Orbitron({
   subsets: ["latin"],
