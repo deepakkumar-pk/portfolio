@@ -1,6 +1,11 @@
 import './globals.css'
 import { Orbitron,Rajdhani,Aldrich } from "next/font/google";
+<<<<<<< HEAD
 import { SpeedInsights } from "@vercel/speed-insights/next";
+=======
+import { Analytics } from '@vercel/analytics/react';
+
+>>>>>>> 21f1b4226d3bb4726d5ab71d9df9ed2346d4d6be
  
 const orbitron = Orbitron({
   subsets: ["latin"],
@@ -36,6 +41,8 @@ export default function RootLayout({ children }) {
         className={`${orbitron.variable} ${rajdhani.variable}  ${aldrich.variable}`}
       >
         {children}
+        <Analytics />
+
       </body>
     </html>
   );
